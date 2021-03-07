@@ -58,4 +58,9 @@ public class FirstController {
 		model.setViewName("homepage");
 		return model;
 	}
+	
+	private void getblog() {
+		// TODO Auto-generated method stub
+
+	}
 }
