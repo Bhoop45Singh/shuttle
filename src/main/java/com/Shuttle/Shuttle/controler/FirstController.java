@@ -59,8 +59,12 @@ public class FirstController {
 		return model;
 	}
 	
-	private void getblog() {
-		// TODO Auto-generated method stub
+	@RequestMapping(value = "/blogs", method = RequestMethod.GET)
+	private ModelAndView getblog() {
+		ModelAndView model = new ModelAndView();
+		model.addObject("message", "About page");
+		model.setViewName("blog-list");
+		return model;
 
 	}
 }
